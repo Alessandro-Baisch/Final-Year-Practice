@@ -10,14 +10,15 @@ import { RequestEdit, RequestList, RequestShow, RequestCreate } from "./Tables/R
 import { StudentCreate, StudentEdit, StudentList, StudentShow } from "./Tables/STUDENT";
 
 
+import BookIcon from '@mui/icons-material/BookOutlined';
 
 const TRAILBASE_URL = "https://refactored-happiness-x59qj7xpwxv43694j-4000.app.github.dev/"
 const{dataProvider, authProvider} =await createTrailbaseProvider (TRAILBASE_URL);
 
 const App = () => (
   <Admin dataProvider={dataProvider} authProvider={authProvider} theme={radiantLightTheme}>
-    <Resource name="BOOK" list={BookList} edit={BookEdit} create={BookCreate} show={BookShow}/>
-    <Resource name="PUBLISHER" list={PublisherList} edit={PublisherEdit} create={PublisherCreate} show={PublisherShow}/>
+    <Resource name="BOOK" list={BookList} edit={BookEdit} create={BookCreate} show={BookShow} icon={BookIcon}/>
+    <Resource name="PUBLISHER" list={PublisherList} edit={PublisherEdit} create={PublisherCreate} show={PublisherShow} />
     <Resource name="ORDERS" list={OrderList} edit={OrderEdit} create={OrderCreate} show={OrderShow}/>
     <Resource name="REQUEST" list={RequestList} edit={RequestEdit} create={RequestCreate} show={RequestShow}/>
     <Resource name="STUDENT" list={StudentList} edit={StudentEdit} create={StudentCreate} show={StudentShow}/>

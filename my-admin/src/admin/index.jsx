@@ -7,11 +7,8 @@ const{dataProvider, authProvider} =await createTrailbaseProvider (TRAILBASE_URL)
 
 const App = () => (
   <Admin dataProvider={dataProvider} authProvider={authProvider}>
-    <Resource name="BOOK" list={ListGuesser} edit={EditGuesser} />
-    <Resource name="ORDERS" list={ListGuesser} edit={EditGuesser} />
-    <Resource name="PUBLISHER" list={ListGuesser} edit={EditGuesser} />
-    <Resource name="REQUEST" list={ListGuesser} edit={EditGuesser} />
-    <Resource name="STUDENT" list={ListGuesser} edit={EditGuesser} />
+    <Resource name="posts" list={ListGuesser} />
+    <Resource name="comments" list={ListGuesser} />
   </Admin>
 );
 

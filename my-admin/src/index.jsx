@@ -3,6 +3,7 @@ import { Admin, Resource, ListGuesser, EditGuesser, ShowGuesser, radiantLightThe
 import {createTrailbaseProvider} from "/workspaces/Final-Year-Practice/my-admin/ra-trailbase.js";
 
 
+// For each of the resources jsx files imports
 import { BookEdit, BookList, BookShow, BookCreate} from "./Tables/BOOK";
 import { PublisherEdit, PublisherList, PublisherShow, PublisherCreate } from "./Tables/PUBLISHER";
 import { OrderList, OrderShow, OrderEdit, OrderCreate} from "./Tables/ORDERS";
@@ -10,6 +11,7 @@ import { RequestEdit, RequestList, RequestShow, RequestCreate } from "./Tables/R
 import { StudentCreate, StudentEdit, StudentList, StudentShow } from "./Tables/STUDENT";
 
 
+// Linking trailbase to react
 const TRAILBASE_URL = "https://refactored-happiness-x59qj7xpwxv43694j-4000.app.github.dev/"
 const{dataProvider, authProvider} =await createTrailbaseProvider (TRAILBASE_URL);
 

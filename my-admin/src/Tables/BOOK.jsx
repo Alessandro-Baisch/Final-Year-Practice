@@ -5,7 +5,7 @@ import { DateInput, Edit, NumberInput, SimpleForm, TextInput } from 'react-admin
 export const BookCreate = () => (
   <Create>
         <SimpleForm>
-            <NumberInput source="BOOK_ISBN" />
+            <NumberInput source="BOOK_ISBN"/>
             <TextInput source="id" />
             <DateInput source="BOOK_DATE" />
             <TextInput source="BOOK_NAME" />
